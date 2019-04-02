@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Blood Finder</string>
+
+    <string-array name="blood_group">
+        <item>Select Blood Group</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+
+    <string-array name="district">
+        <item>Select District</item>
+        <item>Dhaka</item>
+        <item>Narayanganj</item>
+        <item>Comilla</item>
+        <item>Gazipur</item>
+
+    </string-array>
+
+    <string-array name="sub_district_dhaka">
+        <item>Select Sub District</item>
+        <item>Tejgaon</item>
+        <item>Savar</item>
+        <item>Keraniganj</item>
+        <item>Nawabganj</item>
+    </string-array>
+
+    <string-array name="sub_district_narayanganj">
+        <item>Select Sub District</item>
+        <item>Sonargaon</item>
+        <item>Bandar</item>
+        <item>Araihazar</item>
+        <item>Rupganj</item>
+    </string-array>
+
+    <string-array name="sub_district_comilla">
+        <item>Select Sub District</item>
+        <item>Titas</item>
+        <item>Meghna</item>
+        <item>Laksam</item>
+        <item>Homna</item>
+    </string-array>
+
+    <string-array name="sub_district_gazipur">
+        <item>Select Sub District</item>
+        <item>Kaliakair</item>
+        <item>Kapasia</item>
+        <item>Gazipur Sadar</item>
+        <item>Sreepur</item>
+    </string-array>
+
+    <string-array name="sub_district_empty">
+        <item>Select Sub District</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
