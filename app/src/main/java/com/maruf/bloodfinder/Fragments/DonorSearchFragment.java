@@ -176,11 +176,11 @@ public class DonorSearchFragment extends Fragment {
             public void onClick(View v) {
             String address = subDis+", "+dis;
 
-            /*ArrayList<String> searchItem = new ArrayList<>();
+            ArrayList<String> searchItem = new ArrayList<>();
             searchItem.add(bg);
             searchItem.add(gender);
-            searchItem.add(address);*/
-            donorSearchFragmentInterface.onSearchButtonClicked(null);
+            searchItem.add(address);
+            donorSearchFragmentInterface.onSearchButtonClicked(searchItem);
 
             }
         });

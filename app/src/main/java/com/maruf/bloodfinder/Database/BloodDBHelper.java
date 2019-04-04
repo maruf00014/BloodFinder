@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class BloodDBHelper extends SQLiteOpenHelper {
 
-    public static final String DB_NAME = "Donor_DB";
+    public static final String DB_NAME = "Blood_Finder_DB";
     public static final int DB_VERSION = 1;
 
     public static final String TABLE_DONOR = "table_donor";

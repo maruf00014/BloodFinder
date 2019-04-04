@@ -56,8 +56,8 @@ public class DonorListFragment extends Fragment implements DonorAdapter.OnDonorI
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
         ArrayList<String> searchItems = getArguments().getStringArrayList("searchItems");
-
-        //donorList = dataSource.searchDonor(searchItems.get(0),searchItems.get(1),searchItems.get(2));
+        donorList = new ArrayList<>();
+        donorList = dataSource.searchDonor(searchItems.get(0),searchItems.get(1),searchItems.get(2));
 
         recyclerView = view.findViewById(R.id.donor_list_recyclerView);
 
@@ -68,7 +68,7 @@ public class DonorListFragment extends Fragment implements DonorAdapter.OnDonorI
 
 
 
-        donorAdapter = new DonorAdapter(getActivity(), Donor.generateMovieList(),this );
+        donorAdapter = new DonorAdapter(getActivity(), donorList,this );
 
         recyclerView.setAdapter(donorAdapter);
 

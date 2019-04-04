@@ -215,12 +215,12 @@ public class RegistrationFragment extends Fragment  {
                 password = passwordET.getText().toString();
                 repassword = rePasswordET.getText().toString();
 
-                registrationFragmentInterface.onSignUpButtonClicked(10);
+
 
                 Toast.makeText(getActivity(),"Successful",Toast.LENGTH_SHORT).show();
 
                 String address = subDis+", "+dis;
-                /*
+
                long insertedRow = dataSource.insertNewDonor(new Donor(name,bg,gender,phone,email,address,status,password));
 
                if(insertedRow > 0 ){
@@ -235,10 +235,10 @@ public class RegistrationFragment extends Fragment  {
                    }else Toast.makeText(getActivity(),"Failed to login",Toast.LENGTH_SHORT).show();
 
 
-                   registrationFragmentInterface.onSignUpButtonClicked(10);
+                   registrationFragmentInterface.onSignUpButtonClicked(donorID);
                }
-               else Toast.makeText(getActivity(),"Failed",Toast.LENGTH_SHORT).show();
-*/
+               else Toast.makeText(getActivity(),"SignUp Failed",Toast.LENGTH_SHORT).show();
+
 
             }
         });

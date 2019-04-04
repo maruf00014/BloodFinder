@@ -110,11 +110,11 @@ public class DataSource {
 
         this.openDB();
 
-        Cursor cursor = db.rawQuery("select * from " +BloodDBHelper.TABLE_DONOR /*+" where "
-                +BloodDBHelper.TABLE_DONOR_COL_BG +" = " +bg +" and "
-                +BloodDBHelper.TABLE_DONOR_COL_GENDER +" = " +gndr +" and "
-                +BloodDBHelper.TABLE_DONOR_COL_ADDRESS +" like " +"%" +area +"%"
-                */,null);
+        Cursor cursor = db.rawQuery("select * from " +BloodDBHelper.TABLE_DONOR +" where "
+                +BloodDBHelper.TABLE_DONOR_COL_BG +" = \'" +bg +"\'" +" and "
+                +BloodDBHelper.TABLE_DONOR_COL_GENDER +" = \'" +gndr +"\'" +" and "
+                +BloodDBHelper.TABLE_DONOR_COL_ADDRESS +" = \'" +area +"\'"
+                ,null);
 
         if(cursor != null && cursor.getCount() > 0){
 
@@ -187,8 +187,10 @@ public class DataSource {
         this.openDB();
 
         Cursor cursor = db.rawQuery("select * from " +BloodDBHelper.TABLE_DONOR +" where "
-                +BloodDBHelper.TABLE_DONOR_COL_EMAIL +" = " +email +" and "
+                +BloodDBHelper.TABLE_DONOR_COL_EMAIL +" = \'" +email +"\'" +" and "
                 +BloodDBHelper.TABLE_DONOR_COL_PASSWORD +" = " +password ,null);
+
+
 
         if(cursor != null && cursor.getCount() > 0){
             cursor.moveToFirst();

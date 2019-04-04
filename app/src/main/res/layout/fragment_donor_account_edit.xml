@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.EditAccountFragment">
+    tools:context=".Fragments.DonorAccountEditFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -97,7 +97,7 @@
                     android:textStyle="bold" />
 
                 <Spinner
-                    android:id="@+id/reg_dis_spinner"
+                    android:id="@+id/edit_dis_spinner"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"/>
 
@@ -109,7 +109,7 @@
                     android:textStyle="bold" />
 
                 <Spinner
-                    android:id="@+id/reg_sub_dis_spinner"
+                    android:id="@+id/edit_sub_dis_spinner"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"/>
 
@@ -121,7 +121,7 @@
                     android:textStyle="bold" />
 
                 <Spinner
-                    android:id="@+id/reg_bg_spinner"
+                    android:id="@+id/edit_bg_spinner"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"/>
 
@@ -133,20 +133,20 @@
                     android:textStyle="bold" />
 
                 <RadioGroup
-                    android:id="@+id/reg_radio"
+                    android:id="@+id/edit_radio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/reg_male"
+                        android:id="@+id/edit_male"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Male"
                         android:checked="true"/>
 
                     <RadioButton
-                        android:id="@+id/reg_female"
+                        android:id="@+id/edit_female"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
@@ -161,20 +161,20 @@
                     android:textColor="@android:color/holo_red_dark"
                     android:textStyle="bold" />
                 <RadioGroup
-                    android:id="@+id/reg_status"
+                    android:id="@+id/edit_status"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
                     <RadioButton
-                        android:id="@+id/reg_status_available"
+                        android:id="@+id/edit_status_available"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Available"
                         android:checked="true"/>
 
                     <RadioButton
-                        android:id="@+id/reg_status_unavailable"
+                        android:id="@+id/edit_status_unavailable"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"

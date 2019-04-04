@@ -77,9 +77,9 @@ public class LoginFragment extends Fragment {
                 email = emailET.getText().toString();
                 password = passwordET.getText().toString();
 
-                loginFragmentInterface.onSignINButtonClickd(10);
 
-                /*
+
+
                 int donorID = dataSource.getDonorIDByEmailPass(email,password);
 
                 if(donorID > 0 ){
@@ -87,7 +87,7 @@ public class LoginFragment extends Fragment {
                     loginFragmentInterface.onSignINButtonClickd(donorID);
 
                 }else Toast.makeText(getActivity(),"Failed to login",Toast.LENGTH_SHORT).show();
-*/
+
             }
 
         });

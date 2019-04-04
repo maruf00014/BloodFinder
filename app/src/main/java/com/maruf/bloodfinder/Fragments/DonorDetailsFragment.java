@@ -1,6 +1,7 @@
 package com.maruf.bloodfinder.Fragments;
 
 
+import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -31,6 +32,11 @@ public class DonorDetailsFragment extends Fragment {
         // Required empty public constructor
     }
 
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        dataSource = new DataSource(context);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -41,13 +47,11 @@ public class DonorDetailsFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        donor = null;
+        donor = dataSource.getDonorDetailByID(getArguments().getInt("donorID"));
 
-        //donor = dataSource.getDonorDetailByID(getArguments().getInt("donorID"));
 
-        //donor = new Donor(2,"nnnn","nnnn","nnnn","111","nnnn","nnnn","nnnn","nnnn");
         TextView nameTV, bgTV, genderTV, phoneTV, emailTV, addressTV, statusTV;
-donor = new Donor(10,"Kamal Hasan","O+","Male",
-        "123456","kamal@gmail.com","Dhaka, Tejgaon","Available","Action");
 
 
         ImageView callBtn, smsBtn, emailBtn, bloodRqstBtn;

@@ -53,7 +53,7 @@ public class DonorHomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                donorHomeFragmentInterface.onDonorHomeCardClicked(0,10);
+                donorHomeFragmentInterface.onDonorHomeCardClicked(0,donorID);
 
             }
         });
@@ -62,7 +62,7 @@ public class DonorHomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                donorHomeFragmentInterface.onDonorHomeCardClicked(1,10);
+                donorHomeFragmentInterface.onDonorHomeCardClicked(1,donorID);
 
             }
         });
